@@ -5,6 +5,7 @@ body {
 }
 
 img {
+    flex: 0 0 auto;
     border-radius: 15px;
     max-width: 100%;
     max-height: 100%;
@@ -13,9 +14,23 @@ img {
 
 .header,
 .hero,
+.call-to-action,
 .footer {
     padding-left: 10%;
     padding-right: 5%;
+}
+
+.content,
+.quote {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header,
+.hero,
+.footer {
     background-color: #1F2937;
     color: #f9faf8;
 }
@@ -75,4 +90,32 @@ img {
     background-color: #3382F6;
     color: #f9faf8;
     font-weight: bold;
+}
+
+.content {}
+
+.content-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: center;
+}
+
+.thumbnails {
+    font-size: medium;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.thumbnail img {
+    border: solid 5px;
+    border-color: #3382F6;
 }
